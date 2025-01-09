@@ -16,13 +16,13 @@ const About = () => {
             <p className='mb-10 max-w-2xl font-Ovo'>I am an experienced frontend developer,
                having many professional skills in this field during my career,
                 I have had the privilege of collaborating with
-               prestigious organizations, contributing to there success and growth.</p>
+               prestigious organizations, contributing to their success and growth.</p>
 
                <ul className='grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl mt-5'>
                 {
                   infoList.map(({icon,iconDark,title,description},index)=>(
 
-                    <li className='border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-lightHover 
+                    <li key={index} className='border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-lightHover 
                     hover:translate-y-1 duration-500 hover:shadow-black
                     '>
                       <Image src={icon} alt=''className='w-7 mt-3' />
